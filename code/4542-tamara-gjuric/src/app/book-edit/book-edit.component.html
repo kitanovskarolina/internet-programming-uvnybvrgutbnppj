@@ -1,0 +1,13 @@
+<h1>Edit Book</h1>
+<form (ngSubmit)="saveBook()">
+  <div>
+    <label for="title">Title:</label>
+    <input id="title" [(ngModel)]="book.title" name="title">
+  </div>
+  <div>
+    <label for="author">Author:</label>
+    <input id="author" [(ngModel)]="book.author" name="author">
+  </div>
+ 
+  <button type="submit">Save</button>
+</form>

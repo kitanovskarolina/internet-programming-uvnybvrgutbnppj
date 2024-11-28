@@ -1,0 +1,7 @@
+<h1>Publishers List</h1>
+<ul>
+  <li *ngFor="let publisher of publishers">
+    {{ publisher.name }}
+    <a [routerLink]="['/publishers', publisher.id]">Details</a>
+  </li>
+</ul>

@@ -1,0 +1,13 @@
+<h1>Create Book</h1>
+<form (ngSubmit)="addBook()">
+  <div>
+    <label for="title">Title:</label>
+    <input id="title" [(ngModel)]="book.title" name="title">
+  </div>
+  <div>
+    <label for="author">Author:</label>
+    <input id="author" [(ngModel)]="book.author" name="author">
+  </div>
+  <!-- Add more input fields as necessary -->
+  <button type="submit">Add Book</button>
+</form>
