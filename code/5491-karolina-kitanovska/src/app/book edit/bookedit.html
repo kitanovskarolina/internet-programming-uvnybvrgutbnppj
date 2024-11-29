@@ -1,0 +1,21 @@
+<h1>Edit Book</h1>
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="title">Title:</label>
+    <input id="title" formControlName="title" />
+  </div>
+  <div>
+    <label for="author">Author:</label>
+    <input id="author" formControlName="author" />
+  </div>
+  <div>
+    <label for="publishedYear">Published Year:</label>
+    <input id="publishedYear" type="number" formControlName="publishedYear" />
+  </div>
+  <div>
+    <label for="publisher">Publisher:</label>
+    <input id="publisher" formControlName="publisher" />
+  </div>
+  <button type="submit">Save</button>
+  <button routerLink="/books">Cancel</button>
+</form>

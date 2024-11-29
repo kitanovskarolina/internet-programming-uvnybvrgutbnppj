@@ -1,0 +1,23 @@
+<div *ngIf="book">
+    <h1>{{ book.title }}</h1>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+    <p><strong>Year:</strong> {{ book.publishedYear }}</p>
+    <p><strong>Publisher:</strong> {{ book.publisher }}</p>
+    <p><strong>Status:</strong> {{ book.available ? 'Available' : 'Borrowed' }}</p>
+    <button routerLink="/books/{{ book.id }}/edit">Edit</button>
+    <button routerLink="/books">Back to List</button>
+  </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
