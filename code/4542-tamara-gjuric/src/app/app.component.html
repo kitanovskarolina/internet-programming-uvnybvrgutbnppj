@@ -1,23 +1,10 @@
-<!-- Navigation -->
-<nav class="navbar">
-  <div class="container navbar-container">
-    <a class="navbar-brand">
-      <h1>The navbar goes here</h1>
-    </a>
-  </div>
+<nav>
+  <ul>
+    <li><a [routerLink]="['/books']">Books</a></li>
+    <li><a [routerLink]="['/publishers']">Publishers</a></li>
+    <li><a [routerLink]="['/statistics']">Statistics</a></li>
+    <li><a [routerLink]="['/about']">About</a></li>
+  </ul>
 </nav>
-
-<!-- Main Content -->
-<main class="main-content">
-  <div class="container">
-    The main content goes here
-    <router-outlet></router-outlet>
-  </div>
-</main>
-
-<!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <p>&copy; 2024 The footer goes here</p>
-  </div>
-</footer>
+<router-outlet></router-outlet> 
+<app-footer></app-footer> 
