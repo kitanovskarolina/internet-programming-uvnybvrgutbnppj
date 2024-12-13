@@ -1,0 +1,9 @@
+<h1>About</h1>
+<div *ngIf="book">
+  <p><strong>Karolina Kitanovska</strong> {{ book.title }}</p>
+  <p><strong>5491</strong> {{ book.author }}</p>
+  <p><strong>2024</strong> </p>
+  <p><strong>https://github.com/kitanovskarolina</strong> </p>
+  <button [routerLink]="['/books', book.id, 'edit']">Edit</button>
+  <button routerLink="/books">Back to List</button>
+</div>
